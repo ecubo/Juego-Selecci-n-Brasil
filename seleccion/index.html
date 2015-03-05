@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seleccion</title>
+
+<!-- VIEWPORT IPAD -->
+<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- ESTILOS CSS -->
+<link rel="stylesheet" type="text/css" href="../resources/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body id="fusion" onclick="">
+
+
+    <section id="paginas" pageId="seleccion">
+        <audio loop id="fondo">
+          <source src="sound/fondo.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="goal">
+          <source src="sound/gol.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="fallo">
+          <source src="sound/error.mp3" type="audio/mpeg">
+        </audio>
+
+    	<article class="page" id="landing" objectId="descubre" objectType="interactive">
+            <div id="preparate">
+                <a href="javascript:void(0)" class="btnCerrar"></a>
+                <div id="play" objectId="inicio_juego" objectType="interactive"></div>
+                <ul id="puntuacion">
+                	<li></li>
+                	<li></li>
+                	<li></li>
+                	<li></li>
+                </ul>
+                <div class="goles" id="gcamiseta" style="background-image:url(images/camiseta.png)"></div>
+                <div class="goles" id="gbombo" style="background-image:url(images/bombo.png)"></div>
+                <div class="goles" id="gvuvucela" style="background-image:url(images/vuvucela.png)"></div>
+                <div class="goles" id="gbanderas" style="background-image:url(images/banderas.png)"></div>
+                <div id="gol"></div>
+                <div id="error"></div>
+                <div id="localizador" onclick="window.top.showTiendas()" objectId="localizador" objectType="interactive"></div>
+                <div id="replay" objectId="juega_otra_vez" objectType="interactive"></div>
+            </div>
+    	</article>
+
+        <ul id="iconos" onclick="" objectId="tiempo_juego" objectType="static"></ul>
+
+    </section>
+    
+
+
+
+<!-- FUNCIONALIDADES JS -->
+<script type="text/javascript" src="../resources/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,776 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/**********/
+/* RESETS */
+/**********/
+*{margin:0;padding:0;box-sizing:border-box;border:0}html,body{height:100%}body{overflow:hidden;font-size:1em;/*background: -webkit-linear-gradient(top,  rgba(0,92,132,1) 0%,rgba(0,145,174,1) 50%,rgba(0,198,215,0.8) 100%);*/}div{position:relative}ul,ol,li{list-style:none}a{color: rgba(0,92,132,1); font-weight: bold;}#content,section,section article{width:100%;height:100%;background-color:#fff;overflow:hidden;margin:0 auto;position: relative;}section{position: absolute;top: 0;}#content{background-color: transparent;}
+
+/*****************/
+/* HEADER PAGINA */
+/*****************/
+section article header {
+	width: 100%;
+	height: 68px;
+	z-index: 100;
+	font-family: 'Movistar Headline';
+	font-weight: bold;
+	position: absolute;
+	border-left: 8px solid #fff;
+	padding: 8px 0 0 18px;
+	margin-bottom: 0;
+}
+
+section article header h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #9c9e9f;
+	line-height: 1em;
+}
+
+section article header h2 span {
+	font-weight: bold;
+	color: rgba(0,198,215,1);
+}
+
+section article header h3 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+section article header h3,
+section article header h4 {
+	color: rgba(0,92,132,1);
+}
+
+section article header h4 {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 37px;
+	margin-top: 35px;
+}
+
+section article#autonomos header h3 {
+	color: rgba(0,198,215,1);
+}
+
+/**************/
+/* CONTENIDOS */
+/**************/
+section article .contenido {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/*section article footer {
+	position: absolute;
+	bottom: 0;
+	padding: 30px;
+	width: 100%;
+}*/
+
+/*********************/
+/* CONTENIDO LANDING */
+/*********************/
+section article#landing header {
+	width: 50%;
+	height: 100%;
+/*	background-color: rgba(0,0,0,0.8);*/
+	padding: 100px 0 0 74px;
+	float: left;
+/*	border-right: 9px solid rgba(122,184,0,1);*/
+	position: static;
+	border-left: none;
+}
+
+section article#landing header h2 {
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 35px;
+	background-color: transparent;
+	color: rgba(122,184,0,1);
+	font-weight: bold;
+	display: block;
+	padding: 0;
+}
+
+section article#landing header p {
+	color:#4c8da9;
+	font-family: 'Movistar Headline';
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+section article#landing header div {
+	position: absolute;
+	bottom: 90px;
+}
+
+section article#landing header div p {
+	font-weight: bold;
+}
+
+/*section article#landing .contenido {
+	position: absolute;
+}*/
+
+#landing ul {
+	position: absolute;
+	bottom: 100px;
+}
+
+
+#landing header ul li {
+	width: 220px;
+	height: 78px;
+	border-left: 8px solid rgb(0,92,132);
+	background-color: #b2ceda;
+	font-family: 'Movistar Headline';
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1em;
+	color: rgb(0,92,132);
+	margin-bottom: 17px;
+	padding: 22px 0 0 18px;
+}
+
+#landing header ul li:last-child {
+	margin-bottom: 0;
+}
+
+#landing header ul li.dosLineas {
+	padding-top: 12px;
+}
+
+#landing header ul li.cian {
+	color: #00c6d7;
+	border-left: 8px solid #00c6d7;
+	background-color: #b2eef3;
+}
+
+#landing header ul li.verde {
+	color: #7ab800;
+	border-left: 8px solid #7ab800;
+	background-color: #e4f1cc;
+}
+
+/*********************/
+/* FOOTER NAVEGACION */
+/*********************/
+footer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+footer nav {
+width: 1.375em;
+height: 100%;
+overflow: hidden;
+}
+
+footer nav:before {
+	top: 0;
+}
+
+footer nav:after {
+	bottom: 0;
+}
+
+footer nav ul {
+position: absolute;
+width: 100%;
+height: 3.25em;
+top: 0;
+bottom: 0;
+margin: auto 0;
+-moz-box-sizing: initial;
+-webkit-box-sizing: initial;
+box-sizing: initial;
+}
+
+footer nav.uno ul {
+	height: 1em;
+}
+
+footer nav.dos ul {
+	height: 2.15em;
+}
+
+footer nav.cuatro ul {
+	height: 4.35em;
+}
+
+footer nav.cinco ul {
+	height: 5.5em;
+}
+
+
+footer nav.seis ul {
+	height: 6.5em;
+}
+
+footer nav.siete ul {
+	height: 7.8em;
+}
+
+footer nav.ocho ul {
+	height: 8.75em;
+}
+
+
+footer nav li {
+width: 0.75em;
+height: 0.75em;
+margin: 0.1875em 0;
+background-color: rgba(0,92,132,1);
+-webkit-border-radius: 50%;
+border-radius: 50%;
+border: 1px solid #fff;
+float: right;
+}
+
+footer nav li.actual {
+	background-color: rgba(122,184,0,1) !important;
+	position: relative;
+}
+
+footer nav li.actual:after {
+position: absolute;
+content: "";
+width: 0;
+height: 0;
+border-top: 0.6em solid transparent;
+border-left: 0.7em solid rgb(0,92,132);
+border-bottom: 0.6em solid transparent;
+top: -0.25em;
+left: -0.9em;
+}
+
+footer nav li.actual:before {
+position: absolute;
+content: "";
+width: 0;
+height: 0;
+border-top: 0.7em solid transparent;
+border-left: 0.8em solid #fff;
+border-bottom: 0.7em solid transparent;
+top: -0.35em;
+left: -0.9em;
+}
+
+/*footer nav {
+	position:fixed;
+	bottom:30px;
+	right:30px;
+}
+
+footer nav ul li {
+	list-style:none;
+	width:11px;
+	height:11px;
+	border-radius:50%;
+	background:#fff;
+	margin-top:3px;
+	border:1px solid #9c9e9f;
+	-webkit-transform:none !important;
+}
+
+footer nav ul li.actual {
+	background:#c6c7c8;
+}*/
+
+.boton {
+	position: relative;
+	width: 76px;
+	height: 68px;
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-left: 8px solid #b2b2b2;
+/*	-webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.2));*/
+}
+
+.boton p {
+	width: 350px;
+	position: relative;
+	left: 60px;
+	font-family: 'Movistar Headline';
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 14px;
+	color: rgba(0,92,132,1);
+	margin-bottom: 3px;
+}
+
+.boton p.dosLineas {
+	padding-top: 6px
+}
+
+.boton p.unaLinea {
+	padding-top: 12px
+}
+
+.botonMore {
+	background-image: url(../images/icons/more.svg);
+}
+
+.botonPlay {
+	background-image: url(../images/icons/play.svg);
+}
+
+.botonClose {
+	background-image: url(../images/icons/close.svg);
+	position: absolute;
+	top: -22px;
+	right: -22px;
+}
+
+.infoAdicional {
+	width: 220px;
+	height: 68px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(178,238,243,1);
+	font-family: 'Movistar Text';
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 68px;
+	border-left: 8px solid rgba(0,92,132,1);
+	z-index: 1;
+	text-align: center;
+/*	padding-left: 20px;*/
+/*	background-image: url(../images/icons/descubre.svg);*/
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	text-decoration: none;
+}
+
+.infoAdicional.localizador {
+	text-align: left;
+	font-weight: bold;
+/*	background-image: url(../images/icons/mapa.svg);*/
+	line-height: 1em;
+	padding: .7% 2% 0;
+	-webkit-padding: .7% 2% 0;
+	border-left-color: rgb(122,184,0);
+	color: rgb(122,184,0);
+	background-color: #d7eab2;
+}
+
+.infoAdicional.localizador span {
+	font-size: .8em;
+	font-weight: normal;
+}
+
+.infoAdicional.dosLineas {
+	line-height: 1em;
+	padding: 1.5% 2% 0;
+	-webkit-padding: 1.5% 2% 0;
+	text-align: left;
+}
+
+.infoAdicional.tresLineas {
+	text-align: left;
+	line-height: 1em;
+	padding: .7% 2% 0;
+	-webkit-padding: .7% 2% 0;
+}
+.botonInfo {
+	background-image: url(../images/icons/info.svg);
+}
+
+.botonAsterisco {
+	background-image: url(../images/icons/asterisco.svg);
+	z-index: 2000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*.botonSumario {
+	background-image: url(../images/icons/sumario.svg);
+	background-color: transparent;
+}*/
+
+.botonSubir {
+	background-image: url(../images/icons/subir.svg);
+}
+
+.botonNext {
+	background-color: #e4f1cc;
+	background-image: url(../images/icons/next.svg);
+}
+
+.botonVolver {
+	background-position: -6px center;
+	background-size: containt;
+	background-repeat: no-repeat;
+/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c2db95), color-stop(100%,#9cc651));*/
+/*	background: -webkit-linear-gradient(top, #c2db95 0%,#9cc651 100%);*/
+}
+
+.botonCielo {
+/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c2db95), color-stop(100%,#9cc651));*/
+	background: -webkit-linear-gradient(top, rgba(0,92,132,1) 0%,rgba(0,198,215,1) 100%);
+}
+
+.botonVolver.sumario {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../images/icons/sumario.svg);
+}
+
+.botonVolver .volver {
+	background-color: transparent;
+	background-image: url(../images/icons/volver.svg);
+}
+
+.botonVolver .fibra {
+	background-color: transparent;
+	background-image: url(../images/icons/fibra.svg);
+}
+
+.botonVolver .guia {
+	background-color: transparent;
+	background-image: url(../images/icons/guia.png);
+}
+
+.botonVolver .fusion {
+	background-color: transparent;
+	background-image: url(../images/icons/fusion.svg);
+}
+
+.botonVolver .iconMas {
+	background-color: transparent;
+	background-image: url(../images/icons/iconMas.svg);
+}
+
+.botonVolver .more {
+	background-color: transparent;
+	background-image: url(../images/icons/more.svg);
+}
+
+.botonVolver .smartphone {
+	background-color: transparent;
+	background-image: url(../images/icons/smartphone.svg);
+}
+
+.botonBig .boton.botonDescarga {
+	height: 40px;
+	width: 30px;
+	background-color: transparent;
+	background-image: url(../images/icons/descarga.svg);
+	right: 15px;
+	bottom: 17px;
+}
+
+.botonVideo {
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	background-image: url(../images/icons/video.svg);
+}
+
+.botonVideo2 {
+background-image: url(../../resources/images/icons/video2.svg);
+background-color: transparent;
+border-left: none;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+width: 48px;
+height: 48px;
+}
+
+.botonMapa {
+	background-color: transparent;
+	background-image: url(../images/icons/mapa.svg);
+}
+
+.botonSmartphone {
+	background-image: url(../images/icons/smartphone.svg);
+}
+
+.botonBig {
+width: 200px;
+height: 75px;
+overflow: hidden;
+float: left;
+margin-right: 14px;
+background-color: #66dde7;
+border-left: 8px solid #005c84;
+padding-left: 20px;
+}
+
+.botonBig .texto {
+	padding-top: 5px;
+	position: absolute;
+}
+
+.botonBig h1 {
+	font-family: 'Movistar Headline';
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 17px;
+	color: rgba(0,92,132,1);
+}
+
+.botonBig p {
+	font-family: 'Movistar Text';
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 13px;
+	margin-top: 4px;
+}
+
+.botonBig .boton {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	bottom: 13px;
+	right: 27px;
+}
+
+.botonMedium {
+	width: 200px;
+	height: 44px;
+	background: -webkit-linear-gradient(top, #c2db95 0%,#9cc651 100%);
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+}
+
+.botonMedium .texto {
+	margin-left: 45px;
+	height: 100%;
+	width: 150px;
+	padding-top: 7px;
+}
+
+.botonMedium h1 {
+	font-family: 'Movistar Text';
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 15px;
+	color: rgba(73,97,24,1);
+}
+
+.botonMedium p {
+	font-family: 'Movistar Text';
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+	width: 100%;
+	position: inherit;
+	left: 0;
+}
+
+/**************/
+/* NAVEGACION */
+/**************/
+.navegacion {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	z-index: 1000;
+	left: 50%;
+	margin-left: -30%;
+	top: 50%;
+	margin-top: -30%;
+	opacity: 0;
+	display: none;
+}
+
+.navegacion .prevPage,
+.navegacion .nextPage,
+.navegacion .topPage,
+.navegacion .downPage {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #fff;
+	position: absolute;
+	-webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,0.8))
+}
+
+.navegacion .prevPage:after,
+.navegacion .nextPage:after,
+.navegacion .topPage:after,
+.navegacion .downPage:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #fff;
+	position: absolute;
+	top: 20px;
+	left: -20px;
+}
+
+.navegacion .prevPage,
+.navegacion .nextPage {
+	top: 50%;
+	margin-top: -20px;
+}
+
+.navegacion .prevPage {
+	left: 0;
+	-webkit-transform: rotate(-90deg);
+}
+
+.navegacion .nextPage {
+	right: 0;
+	-webkit-transform: rotate(90deg);
+}
+
+.navegacion .topPage,
+.navegacion .downPage {
+	left: 50%;
+	margin-left: -20px;
+}
+
+.navegacion .downPage {
+	bottom: 0;
+	-webkit-transform: rotate(180deg);
+}
+
+/*********/
+/* VIDEO */
+/*********/
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+    width:100%;
+    height:100%;	
+}
+
+.modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: none;
+	z-index: 9999;
+	width: 576px;
+	height: 420px;
+	margin: 0 auto;
+	border-radius: 11px;
+	margin-bottom: 10px;
+	background-color: #eceded;
+/*	background: -webkit-linear-gradient(left, #eeeeee 0%,#ffffff 50%,#eeeeee 100%);*/
+	margin-top: -210px;
+	margin-left: -288px;
+	border: 4px solid #c6c7c8;
+	background-image: url(../images/sombra.svg);
+	background-size: 576px;
+	background-repeat: no-repeat;
+	background-position: center 384px;
+}
+
+.modal .sinConexion {
+    display: none;
+    position: absolute;
+    left: 26px;
+    top: 50px;
+    background-color: black;
+    width: 375px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    padding: 180px 110px;
+    font-weight: bold;
+    font-family: "Movistar Text";
+}
+
+.modal #videoContainer {
+	position: relative;
+	left: 50%;
+	top: 42px;
+	width: 478px !important;
+	height: 318px !important;
+	margin-left: -239px;
+}
+
+.cierre {
+    width:38px;
+    height:38px;
+    background:url(../images/icons/iconCierre.svg) no-repeat;
+    background-position: bottom left ;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.iconPeli {
+    width:38px; height:38px;
+    background:url(../images/icons/icono_term_2.png) no-repeat;
+    background-size:contain;
+    position:absolute;
+    left:80px;
+    top:90px;
+    z-index:5;
+}
+
+.vertical {
+	display: none;
+}
+
+
+/****************/
+/* MEDIAQUERIES */
+/****************/
+/* PORTRAIT */
+@media only screen and (orientation : portrait) {
+
+	.infoAdicional.dosLineas {
+		padding-top: 2.3%;
+	}
+
+	section article#landing .contenido {
+		padding-top: 25%;
+		margin-left: 0;
+	}
+
+    #mask {
+        width:768px;
+        height:1024px;  
+    }
+
+    .vmodal {
+        left: 57px;
+        top: 280px;
+    }
+
+    .iconPeli {
+        left:124px;
+        top:110px;
+    }
+
+    .horizontal {
+    	display: none;
+    }
+
+	.vertical {
+		display: block;
+	}
+}
+
+* {
+/* Prevent any object from being highlighted upon touch event*/
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
